@@ -1,0 +1,18 @@
+<mat-drawer-container class="home-container" autosize>
+  <mat-drawer
+    #drawer
+    class="home-sidenav"
+    mode="side"
+    id="sideNav"
+    fixedInViewport="true"
+    opened
+  >
+    <app-sidenav> </app-sidenav>
+  </mat-drawer>
+  <div class="home-toolbar">
+    <app-toolbar></app-toolbar>
+  </div>
+  <main class="home-main">
+    <router-outlet></router-outlet>
+  </main>
+</mat-drawer-container>
